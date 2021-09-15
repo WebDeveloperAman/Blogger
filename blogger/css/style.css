@@ -1,0 +1,647 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+     scroll-behavior: smooth;
+}
+html,body{
+    /* margin: 0; */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+     /* color: #3f4954; */
+     background: rgb(255, 255, 255);
+}
+:root{
+--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+a{
+    text-decoration: none;
+    color: #3f4954;
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+.flex-row{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+/*-------------------------------navbar----------------------------------*/
+.nav{
+    background-color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    height: 0;
+    min-height: 7.5vh;
+    overflow-x: hidden;
+}
+.nav .nav-brand a{
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding: 1rem 1rem;
+  /* text-decoration: none; */
+  display: block;
+}
+.nav .nav-items{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    transition: 0.3s;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: rgb(48, 48, 114);
+     color: white;
+
+}
+.nav .nav-items .nav-link a:hover{
+    color: white;
+}
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+position: absolute;
+top: 0%;
+width: 90%;
+cursor: pointer;
+   display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+ 
+
+}
+.hide{
+     display: none; 
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: #3f4954;}
+
+.nav .social{
+ padding: 1.4rem;   
+}
+.nav .social i{
+    padding: 0.2rem;
+    font-size:1.7rem;
+}
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+/*----------------------------------------------site---------------------------------------------------*/
+main .site-title{
+    background: url(../assests/Background-image.png);
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: #fff;
+}
+main .site-title h1,h3{
+    margin: 1rem;
+}
+main .btn{
+    border: none;
+    padding: 1.1rem 4rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+main .site-title .btn:hover{
+    padding: 1rem 4rem;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+}
+main .blog{
+    background:url("../assests/Abract01.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+    padding: 6rem;
+    background-size: 55%;
+    background: linear-gradient(0,0,0,0.25);
+}
+.container{
+    display: flex;
+    color: black;
+}
+main .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    margin: 3rem 2rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.534);
+}
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background:rgb(169, 222, 243) ;
+    transition: 0.3s;
+    margin-top: 1rem;
+}
+/* main .blog-content .btn-blog:hover{
+    color: rgb(0, 183, 255);
+    border: 2px solid rgb(6, 213, 236);
+    padding: .7rem 2rem;
+    background: transparent;
+} */
+main .blog-content span{
+    display: block;
+}
+
+
+
+h1{
+font-size: 4rem;
+}
+h3{
+font-size: 2rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: rgb(169, 222, 243);
+    transition: all ease 0.25s;
+}
+
+/*--------------------------------------------------- Site Content----------------------------------------------t  */
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+     margin-bottom: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+main .post-content{
+    /* margin-bottom: 5rem;
+    margin-left: 5rem; */
+    width: 100%;
+}
+main .site-content img{
+    width: 100%;
+    height: 100%;
+}
+main .site-content .post-content > .post-image, .post-title, .post-info{
+    padding: 1rem 2rem;
+}
+.post-info{
+    background: skyblue;
+    position: absolute;
+    left: 23vw;
+    display: flex;
+    margin-top: -3rem;
+    border-radius: 3rem;
+}
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+    overflow-y: hidden;
+}
+main .site-content .post-content > .post-image .img{
+    overflow: hidden;
+    transition: all ease 0.8s;
+}
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.1);
+}
+.post-title a{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.post-title p {
+    padding: 1.3rem 0;
+}
+main .post-title button{
+    border-radius: 0px;
+    padding: 0.7rem 1.5rem;
+    background: skyblue;
+}
+
+/*--------------------------------------------Sidebar------------------------------------------*/
+.site-content> .side-bar .category-list li{
+    background: skyblue;
+    padding: .8rem 1rem;
+    border-radius: 3rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin:.8rem  auto;
+    font-size: 1.1rem;
+    justify-content: space-between;
+}
+.site-content> .side-bar .category-list li a{
+    color: black;
+}
+.side-bar .category h2{
+    padding: 1.4rem 2rem;
+    font-size: 2.5rem;
+}
+.post-tag{
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 2rem;
+}
+.site-content .side-bar .popular-post .post-content{
+    padding: 1rem 0 ;
+}
+.site-content .side-bar .popular-post{
+    padding-top: 13rem;
+    font-size: 1.6rem;
+}
+.post-infoo{
+    padding: .4rem .1rem !important;
+    margin-left: 2rem;
+    font-size: 1rem !important;
+    background: rgb(255, 255, 255) !important;
+    margin-top: -3.5rem; 
+    position: absolute;
+    font-weight: 400;
+}
+.side-bar .post-content{
+    margin-top: 5rem;
+}
+.post-content .post-image{
+    height: 100%;
+}
+.site-content .side-bar .newsletter{
+    padding-top: 3rem;
+    text-align: center;
+}
+.site-content .side-bar .newsletter .form-element{
+    padding-top: .5rem 2rem;
+}
+.site-content .side-bar .newsletter .input-element{
+    padding: 1.7rem .7rem;
+    width: 64%;
+    height: 1.9rem;
+    font-size: 1rem;
+}
+.site-content .side-bar .newsletter .form-btn{
+    border-radius: 0;
+    padding: .8rem 22.9%;
+    margin: 1rem 0;
+    background: skyblue;
+}
+.site-content .side-bar .newsletter h2{
+    padding-top: 3rem;
+}
+
+.site-content .popular-tags{
+    padding: 5rem 0;
+}
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+ .tag{
+    background: skyblue;
+    padding: .4rem 1rem;
+    border-radius: 3rem;
+    margin: 0.4rem 0.6rem;
+} 
+/*-------------------------x---------------------site---------------------x------------------------------*/
+/* -----------------------------------------------Footer--------------------------------------  */
+footer p{
+    color: grey;
+}
+footer.footer{
+    height: 100%;
+    background-color: rgb(24, 23, 23);
+    position: relative;
+    color: white;
+}
+footer.footer .containerr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer.footer .containerr> div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3.5rem;
+}
+footer .footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+#email{
+    padding: 0.5rem;
+    width: 60%;
+    border: 2px solid skyblue;
+    outline: skyblue;
+    background: rgb(0, 0, 0);
+    color: white;
+    margin-top: 2rem;
+}
+footer ::placeholder{
+    color: white;
+}
+footer .span{
+    padding: 0.7rem .7rem;
+    background: skyblue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+footer .follow div i{
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+.text-gray{
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    padding-bottom: 1rem;
+}
+#a{
+    color: white;
+}
+footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    color: #34568B;
+    font-size: 1.5rem;
+}
+footer .move-up:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* --------------x---------x---------x---------------Footer------------x----------x--------x--------  */
+/* responsive on 750px*/
+
+
+
+@media only screen and (max-width: 1430px){
+     .grid-container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+
+#removable{
+    display: none;
+}
+main .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    margin: 2rem 2rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.534);
+    font-size: 0.8rem;
+}
+main .site-content{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.post-info {
+    left: 20vw;
+}
+.post-infoo {
+    font-size: 0.8rem !important;
+    margin-top: -1.5rem;
+}
+.post-title a {
+    font-size: 1.5rem;
+}
+.post-tag a {
+    font-size: 1.2rem;
+    padding-top:0.2rem ;
+}
+.site-content .side-bar .newsletter .input-element, #email{
+    width: 75%;
+}
+
+}
+
+
+
+@media only screen and (max-width: 1150px){
+    .tag {
+    padding: .4rem 0.7rem;
+    margin: 0.3rem 0.4rem;
+}
+#removable{
+    display: none;
+}
+main .blog-content {
+    margin-left: 0;
+}
+.post-info {
+    left: 2vw;
+}
+/* .site-content> .side-bar .category-list li {
+        padding: .6rem 0.7rem;
+        width: 72%;
+        font-size: 0.8rem;
+} */
+.post-infoo{
+   font-size: 1rem !important;
+    margin-top: -3.5rem;
+    width: 50%;
+}
+footer.footer .containerr> div {
+    padding: 1.5rem;
+}
+main .blog {
+    height: 74vh;
+}
+h1 {
+    font-size: 3rem;
+}
+:root{
+    width: 101%;
+}
+     main .site-content{
+        grid-template-columns: 100%;
+    }
+    .post-info {
+    left: 28vw;
+}
+}
+@media only screen and (max-width: 750px){
+     .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+     }
+     /*
+     .nav .toggle-collapse{
+       display: initial;
+     } */
+     .hide{
+         display: initial;
+     }
+     .nav .nav-brand{
+         display: flex;
+        justify-content: center;
+     }
+     .nav .social i{
+      font-size: 50px;
+         
+     }
+   main .btn-blog{
+       font-size: 0.7rem;
+   }
+   main .blog-content h2{
+       font-size: 0.7rem;
+   }
+   
+     .nav{
+         position: fixed;
+         width: 100%;
+     }
+     #removable{
+    display: none;
+}
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+    footer.footer .containerr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+h1 {
+    font-size: 3rem;
+    }
+    .post-info{
+        left: 18vh;
+        padding: 0.7rem;
+    }
+        .container{
+        display: none;
+        height: 0%;
+        position: fixed;
+    }
+    main .blog{
+        display: none;
+        height: 5%;
+    }
+
+}
+ @media only screen and (max-width: 675px){
+  h1{
+      font-size: 2.3rem;
+  }
+  main .btn{
+      padding: 0.7rem 3rem;
+  }
+  main .site-content{
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+} 
+ @media only screen and (max-width: 635px){
+  h1{
+      font-size: 2.3rem;
+  }
+  main .btn{
+      padding: 0.7rem 3rem;
+  }
+  main .site-content{
+      margin-left: 0.7rem;
+      margin-right: 0.7rem;
+  }
+   .post-info{
+        left: 20%;
+        padding: 0.7rem;
+    }
+} 
+ @media only screen and (max-width: 585px){
+     .post-infoo{
+         width: 55%;
+     }
+ }
+ @media only screen and (max-width: 530px){
+
+    .post-infoo{
+         width: 65%;
+     }
+     footer.footer .containerr {
+    display: grid;
+    grid-template-columns: 1fr ;
+    }
+    footer .text-gray{
+        font-size: 1rem;
+    }
+     .post-info{
+        left: 25%;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+     main .post-title button {
+        left: 20%;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .site-content> .side-bar .category-list li {
+    padding: .5rem 1rem;
+    
+}
+.site-content .side-bar .popular-post {
+    padding-top: 2rem;
+    font-size: 1.3rem;
+}
+.side-bar .post-content {
+    margin-top: 2rem;
+}
+.post-title p{
+          font-size: 1rem;
+          padding: 0.5;
+      }
+      .post-title a{
+         font-size: 1.3rem;
+     }
+ }
+ @media only screen and (max-width: 470px){
+     .post-title a{
+         font-size: 1rem;
+     }
+      .post-title p{
+          font-size: 0.7rem;
+          padding: 0.5;
+      }
+      .post-infoo span{
+          font-size: 0.7rem;
+      }
+       .post-info{
+           left: 15%;
+       }
+ }
+
+ @media only screen and (max-width: 370px){
+     .post-infoo span{
+         font-size: 0.5rem;
+         padding: 0.2rem !important;
+        }
+        .site-content> .side-bar .category-list li {
+    padding: .3rem 0.5rem;
+}
+ }
+
+
